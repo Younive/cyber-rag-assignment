@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 # Configuration
 CHROMA_DB_PATH = "./chroma_db"
-COLLECTION_NAME = "rag_knowledge_base"  # CRITICAL: Must match rag_pipeline.py
+COLLECTION_NAME = "rag_knowledge_base"
 
 class VectorStoreManager:
     """Manage ChromaDB vector store operations"""
@@ -66,7 +66,7 @@ class VectorStoreManager:
             print(f"Successfully loaded vector store with {count} documents.")
             
             if count == 0:
-                print("\n⚠️  WARNING: Vector store is empty!")
+                print("\nWARNING: Vector store is empty!")
                 print("   This usually means:")
                 print("   1. The collection name doesn't match rag_pipeline.py")
                 print("   2. The RAG pipeline hasn't been run yet")
