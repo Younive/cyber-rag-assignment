@@ -1,4 +1,4 @@
-# cyber-rag-assignment
+# Thai-Cybersecurity-RAG
 
 Demo via HuggingFace: https://huggingface.co/spaces/Younive/cyber_rag_assignment_demo 
 
